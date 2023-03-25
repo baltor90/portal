@@ -1,0 +1,4 @@
+kullanıcı adı otomatik oluşacak
+yasal uyarı da değiştirilebilecek
+hakkımızda aşağı inecek 
+sunucu temin etme bölümü eklenecek

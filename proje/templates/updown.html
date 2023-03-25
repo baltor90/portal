@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="tr">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PORTALGO BORSA YAPAY ZEKASI</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp - v4.9.1
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://kit.fontawesome.com/88b9f5cd5c.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  
+<div class="container">
+    <div class="row">
+        <nav class="navbar-expand-lg mx-auto ml-5">
+            <div class="btn-toolbar mt-3 mx-auto" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <form action="u613">
+                    <button type="submit"  class="btn btn-primary">ANASAYFA</button>
+                </form>
+                <form action="uyeYon" method="POST" >
+                    {% csrf_token %}
+                    <button type="submit" name="yenilik" value="uyeyonet" class="btn btn-primary">ÜYELİKLER</button>
+                </form>
+                <form action="res">
+                    <button type="submit" class="btn btn-primary">RESİM-VİDEO EKLE</button>
+                </form>
+                <form action="">
+                    <button type="submit" class="btn btn-primary">ÜYE BİLGİ GÜNCELLE</button>
+                </form>
+                <form action="index.html">
+                    <button type="submit"  class="btn btn-primary">LİSANS EKLE</button>
+                </form>
+                
+                
+                
+                
+              </div>
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <form action="">
+                    <button type="submit" class="btn btn-secondary">ÜYE EKLE</button>
+                </form>
+                <form action="">
+                    <button type="submit" class="btn btn-secondary">ÜYE ONAYLA</button>
+                </form>
+                <form action="">
+                    <button type="submit" class="btn btn-secondary">Whatsapp no güncelle</button>
+                </form>
+                
+                
+                
+                
+              </div>
+              <div class="btn-group" role="group" aria-label="Third group">
+                <form action="index.html">
+                    <button type="submit" class="btn btn-info">ÇIKIŞ</button>
+
+                </form>
+                
+              </div>
+            </div>
+          </nav>
+
+    </div>
+</div>
+
+<hr>
+
+
+<h2 style="margin-left: 50px;">HIZLI MENÜ BİLGİ KONTROL </h2>
+<div class="container d-flex">
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          ÜYE SAYISI
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 300px;">
+            MEVCUT ÜYE SAYINIZ {{ uyesayisi }}
+          </div>
+        </div>
+      </div>
+    
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">
+          LİSANSLI ÜYE SAYISI
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+          <div class="card card-body" style="width: 300px;">
+            ÖDEME YAPARAK LİSANS ALMIŞ ÜYE SAYINIZ {{ uyesayisi }}
+          </div>
+        </div>
+      </div>
+    
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample">
+          ÖDEME İSTEĞİ 
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+          <div class="card card-body" style="width: 300px;">
+            ÖDEMEYİ YAPARAK LİSANS ALMAYI BEKLEYEN ÜYE SAYISI {{ uyesayisi }}
+          </div>
+        </div>
+      </div>
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample4" aria-expanded="false" aria-controls="collapseWidthExample">
+         LİSANS SÜRESİ
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+          <div class="card card-body" style="width: 300px;">
+            LİSANS SÜRESİ BİR AY İÇİNDE DOLACAK ÜYE SAYISI {{ uyesayisi }}
+          </div>
+        </div>
+      </div>
+
+</div>
+  <!-- ======= Header ======= -->

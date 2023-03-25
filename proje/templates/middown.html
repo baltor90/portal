@@ -1,0 +1,41 @@
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    
+
+    <section class="inner-page">
+      <div class="container">
+        </p>
+        <!-- kartlar -->
+       
+            
+       <!-- kart bitti -->
+        
+        
+        {%for i in uyelik%}
+          
+          
+          <table style="border: 5px solid black;" >
+         <tr style="border: 3px solid black;">
+          <td style="border: 3px solid black;">isim</td>
+          <td style="border: 3px solid black;">soyisim</td>
+          <td style="border: 3px solid black;">email</td>
+          <td style="border: 3px solid black;">telno</td>
+            
+         </tr>
+         <tr>
+          <th style="border: 3px solid black;">{{i.isim}}</th>
+          <th style="border: 3px solid black;">{{i.soyad}}</th>
+          <th style="border: 3px solid black;">{{i.email}}</th>
+          <th style="border: 3px solid black;">{{i.telno}}</th>
+          
+
+         </tr>
+        </table>
+        
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->

@@ -1,0 +1,115 @@
+{% include 'ust.html' %}
+{% load static %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs ">
+      <div class="container mt-5">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>SATIN AL</h2>
+          <ol>
+            <li><a href="index.html">ANASAYFA</a></li>
+            <li>Satın-al</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <div class="col-6">
+          <p>
+            <h2 style="color: goldenrod;"><b>PORTALGO SATIN ALMA</b> </h2>
+            Satın alma işlemi için <a href="https://wa.me/+905466469306">WhatsApp</a>  yada <a href="tel:+90 546 646 93 06">Telefon numarası</a>  üzerinden iletişime geçebilirsiniz. <br>
+            Ya da yan taraftaki formu doldurarak satın alma talebinde bulunabilirsiniz. <br> <br>
+
+            <h4><a href="giris-kayit.html">Kayıt </a> olup <a href="giris-kayit.html">Giriş </a>  yaparakta satın alma işlemini gerçekleştirebilirsiniz
+            </h4>
+          </p>
+
+
+        </div>
+        <div class="col-6 " >
+          
+          <form class="row g-3 needs-validation bg-warning" style="margin-left: 200px;border-radius:15px" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">İsim</label>
+              <input type="text" class="form-control" id="validationCustom01"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Soy isim</label>
+              <input type="text" class="form-control" id="validationCustom02"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <!-- <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Kullanıcı adı</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div> -->
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="validationCustom03" required>
+              <!-- <div class="invalid-feedback">
+                Please provide a valid city.
+              </div> -->
+              <label for="validationCustom05" class="form-label">Telefon numarası</label>
+              <input type="tel" class="form-control" id="validationCustom05" required>
+            </div>
+            <!-- <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3"> -->
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">KONU VE İŞLEM</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              <!-- </div> -->
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Kullanım ve Üyelik sözleşmesi
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-success" type="submit">GÖNDER</button>
+            </div>
+          </form>
+          
+
+
+        </div>
+        
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ {% include 'alt.html' %}

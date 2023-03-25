@@ -1,0 +1,54 @@
+.float {
+    box-sizing: border-box;
+    margin-top: 0px;
+    padding: 0px;
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:150px;
+    right:100px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:42px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    }
+    
+    .wp-font{
+        
+        padding: 0;
+        margin: 0;
+        text-align:center;
+        font-size: 18px;
+        color: #29c362;
+    }
+    .wp-font:hover{
+        
+        padding: 0;
+        margin: 0;
+        text-align:center;
+        font-size: 22px;
+        color: #36eb79;
+    }
+    @keyframes cssanimasyonlar1
+        {
+            10%  { background-color: rgba(255, 217, 0, 0.763);    }
+            30%{background-color: black;}
+            40%  { background-color: rgba(255, 217, 0, 0.763);  }
+            60%  { background-color: black;   }
+            70% { background-color: rgba(255, 217, 0, 0.763); }
+        }
+       
+ .numara {
+            font-size: 25px;
+            animation-timing-function: linear;
+            background-color: yellow;
+            animation-name: cssanimasyonlar1;
+            animation-duration: 5s;
+            animation-iteration-count:10000;
+ }
+ .numara:hover{
+    font-size: 30px;
+ }
